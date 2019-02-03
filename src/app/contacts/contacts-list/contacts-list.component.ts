@@ -4,7 +4,7 @@ import { Subscription } from 'rxjs';
 import { Contact } from '../contact.model';
 import { Router, ActivatedRoute } from '@angular/router';
 import { ContactService } from '../contact.service';
-import { AuthGuard } from 'src/app/auth/auth-guard.service';
+import { AuthGuard } from '../../auth/auth-guard.service';
 
 @Component({
   selector: 'app-contacts-list',

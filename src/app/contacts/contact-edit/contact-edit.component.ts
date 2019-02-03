@@ -3,7 +3,7 @@ import { FormGroup, FormControl, Validators, FormArray, ValidatorFn } from '@ang
 import { ActivatedRoute, Router, Params } from '@angular/router';
 
 import { ContactService } from '../contact.service';
-import { identifyYearValidator } from 'src/app/shared/yearValidate.directive';
+import { identifyYearValidator } from '../../shared/yearValidate.directive';
 
 @Component({
   selector: 'app-contact-edit',

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router, Params, ActivatedRoute } from '@angular/router';
 
 import { ContactService } from '../contact.service';
-import { AuthGuard } from 'src/app/auth/auth-guard.service';
+import { AuthGuard } from '../../auth/auth-guard.service';
 
 export type TabType = 'info' | 'films';
 
