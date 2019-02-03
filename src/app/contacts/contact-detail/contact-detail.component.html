@@ -1,0 +1,37 @@
+<div class="row">
+  <div class="col-md-12">
+    <ul class="nav nav-tabs">
+      <li class="nav-item mr-2">
+        <a
+        class="nav-link"
+        (click)="toggleTab('info')"
+        [ngClass]="{'active': tab === 'info'}">Info</a>
+      </li>
+      <li class="nav-item">
+        <a
+        class="nav-link"
+        (click)="toggleTab('films')"
+        [ngClass]="{'active': tab === 'films'}">Films</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<app-contact-info *ngIf="showInfoTab"></app-contact-info>
+
+<app-contact-films *ngIf="showFilmsTab"></app-contact-films>
+
+<div class="row">
+  <div class="col-md-12">
+    <hr>
+    <button
+    class="btn btn-warning mr-2"
+    (click)="onEditContact()"
+    [disabled]="!auth.canActivate()">Edit</button>
+    <button
+    class="btn btn-danger"
+    (click)="onDeleteContact()"
+    [disabled]="!auth.canActivate()">Delete</button>
+    <p *ngIf="!auth.canActivate()">Please, authorize first!</p>
+  </div>
+</div>

@@ -1,0 +1,58 @@
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <ul class="nav">
+      <a class="navbar-brand">Address Book</a>
+      <li class="nav-item">
+        <a
+        class="nav-link"
+        routerLink="/"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >Home</a>
+      </li>
+      <li class="nav-item">
+        <a
+        class="nav-link"
+        routerLink="/contacts"
+        routerLinkActive="active"
+        >Contacts</a>
+      </li>
+    </ul>
+    <ul class="nav">
+      <ng-template [ngIf]="!isAuthenticated()">
+        <li class="nav-item">
+          <a id="signin" class="nav-link" routerLink="/signin">Sign In</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/registration">Register</a>
+        </li>
+      </ng-template>
+      <ng-template [ngIf]="isAuthenticated()">
+        <li class="nav-item">
+          <a
+            class="nav-link">User: {{ getUser() }}</a>
+        </li>
+        <li class="nav-item">
+            <a
+              id="logout-btn"
+              class="nav-link btn"
+              (click)="logout()"
+              >Logout</a>
+        </li>
+        <li
+        class="nav-item">
+          <a
+          class="nav-link btn"
+          (click)="onSaveData()">Save contacts</a>
+        </li>
+        <li
+        class="nav-item">
+          <a
+          class="nav-link btn"
+          (click)="onFetchData()">Fetch contacts</a>
+        </li>
+      </ng-template>
+    </ul>
+  </div>
+</nav>

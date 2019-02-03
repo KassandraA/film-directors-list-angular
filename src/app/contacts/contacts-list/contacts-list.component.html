@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-sm-12 col-md-12 col-lg-12 my-3">
+    <button
+    class="btn btn-primary"
+    (click)="onNewContact()"
+    [disabled]="!auth.canActivate()">New Contact</button>
+    <p *ngIf="!auth.canActivate()">Please, authorize first!</p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-12 col-md-12 col-lg-12">
+    <app-contact-item
+    *ngFor="let contactEl of contacts"
+    [contact]="contactEl"></app-contact-item>
+  </div>
+</div>

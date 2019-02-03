@@ -1,0 +1,213 @@
+<div class="row">
+<div class="col-sm-12">
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+  <input
+  type="hidden"
+  formControlName="id">
+  <h4>Info</h4>
+  <div class="row">
+    <div class="col-sm-3">
+      <img
+      src="{{ imagePath.value }}"
+      class="img-fluid">
+    </div>
+
+    <div class="col-sm-9">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="input-group my-1">
+            <div class="input-group-prepend">
+              <span class="input-group-text">First name</span>
+            </div>
+            <input
+            type="text"
+            id="firstName"
+            class="form-control"
+            formControlName="firstName">
+          </div>
+          <div
+          *ngIf="!contactForm.get('firstName').valid && contactForm.get('firstName').touched"
+          class="alert alert-danger">
+            First name is required!
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="input-group my-1">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Last name</span>
+            </div>
+            <input
+            type="text"
+            id="lastName"
+            class="form-control"
+            formControlName="lastName">
+          </div>
+          <div
+          *ngIf="!contactForm.get('lastName').valid && contactForm.get('lastName').touched"
+          class="alert alert-danger">
+            Last name is required!
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="input-group my-1">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Image</span>
+            </div>
+            <input
+            type="text"
+            id="imagePath"
+            class="form-control"
+            formControlName="imagePath"
+            #imagePath>
+          </div>
+        </div>
+      </div>
+
+      <div
+      [ngClass]="{'cross-validation-error': contactForm.errors?.datesConflict}">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="input-group my-1">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Date Of Birth</span>
+              </div>
+              <input
+              type="date"
+              id="dateOfBirth"
+              class="form-control"
+              formControlName="dateOfBirth">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="input-group my-1">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Date Of Death</span>
+              </div>
+              <input
+              type="date"
+              id="dateOfDeath"
+              class="form-control"
+              formControlName="dateOfDeath">
+            </div>
+            <div
+            *ngIf="contactForm.errors?.datesConflict"
+            class="alert alert-danger">
+              Please, enter the correct dates!
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="input-group my-1">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Occupation</span>
+            </div>
+            <input
+            type="text"
+            id="occupation"
+            class="form-control"
+            formControlName="occupation">
+          </div>
+          <div
+          *ngIf="!contactForm.get('occupation').valid && contactForm.get('occupation').touched"
+          class="alert alert-danger">
+            Occupation is required!
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="input-group my-1">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Country</span>
+            </div>
+            <input
+            type="text"
+            id="countryOfLiving"
+            class="form-control"
+            formControlName="countryOfLiving">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12" formArrayName="films">
+      <h4>Films</h4>
+      <div
+      class="row"
+      *ngFor="let filmControls of getControls(); let i = index"
+      [formGroupName]="i">
+        <div class="col-sm-8 col-md-8 col-lg-8">
+          <div class="input-group my-1">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Title</span>
+            </div>
+            <input
+            type="text"
+            class="form-control"
+            formControlName="filmTitle">
+          </div>
+        </div>
+        <div class="col-sm-2 col-md-3 col-lg-3">
+          <div class="input-group my-1">
+            <div
+            class="input-group-prepend">
+              <span
+              class="input-group-text"
+              style="width: auto">Year</span>
+            </div>
+            <input
+            type="number"
+            class="form-control"
+            formControlName="year">
+          </div>
+        </div>
+        <div class="col-sm-2 col-md-1 col-lg-1">
+          <button
+          type="button"
+          class="btn btn-danger"
+          (click)="onDeleteFilm(i)">-</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <button
+          type="button"
+          class="btn btn-success my-2"
+          (click)="onAddFilm()">Add film</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12">
+      <hr>
+      <p
+      *ngIf="!contactForm.valid && contactForm.touched"
+      class="alert alert-danger">
+        The form is not valid!
+      </p>
+      <button
+      type="submit"
+      class="btn btn-primary mr-2"
+      [disabled]="!contactForm.valid">Save</button>
+      <button
+      type="button"
+      class="btn btn-danger"
+      (click)="onCancel()">Cancel</button>
+      <hr>
+    </div>
+  </div>
+
+</form>
+</div>
+</div>
