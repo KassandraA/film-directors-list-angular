@@ -2,8 +2,24 @@
     color: red;
 }
 .active {
-    font-weight: bold;
+    /* font-weight: bold; */
+    color: #e23237;
 }
-#signin {
+/* #signin {
     color: green;
+} */
+#logo {
+    width: 30px;
+}
+#header {
+    height: 6vh;
+}
+#header li a {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+@media (max-width: 700px) {
+    #header {
+        height: auto;
+    }
 }

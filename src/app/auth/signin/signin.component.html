@@ -14,7 +14,7 @@
           #email="ngModel"
           required>
           <p
-          class="help-message"
+          class="alert alert-danger mt-2"
           *ngIf="!email.valid && email.touched">
             Email is required
           </p>
@@ -34,7 +34,7 @@
           required>
           <p
             *ngIf="!password.valid && password.touched"
-            class="help-message">Paassword is required.
+            class="alert alert-danger mt-2">Paassword is required.
             <span
               *ngIf="password.errors.minlength">
               Paassword must contain at least 6 characters.
@@ -42,13 +42,13 @@
           </p>
         </div>
         
-        <p
-        class="help-message"
-        *ngIf="!f.valid && f.touched">The form is not valid!</p>
+        <!-- <p
+        class="alert alert-danger mt-2"
+        *ngIf="!f.valid && f.touched">The form is not valid!</p> -->
         <button
-        class="btn btn-success"
+        class="btn btn-info"
         type="submit"
-        [disabled]="!f.valid">Login</button>
+        [disabled]="!f.valid">Sign in</button>
         <p
           class="alert alert-danger"
           *ngIf="errorMessage">Error: {{ errorMessage }}</p>

@@ -8,7 +8,7 @@ import { AuthService } from '../auth/auth.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  title = 'Address Book';
+  title = 'Top Great Filmmakers';
 
   constructor(private authService: AuthService) { }
 

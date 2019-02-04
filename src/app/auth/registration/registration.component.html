@@ -1,5 +1,5 @@
 <div class="container">
-    <h1>Registration of a new user</h1>
+    <h1>Registration</h1>
     <div class="row">
       <div class="col-md-8">
         <form (ngSubmit)="onRegister(f)" #f="ngForm">
@@ -14,7 +14,7 @@
             #email="ngModel"
             required>
             <p
-            class="help-message"
+            class="alert alert-danger mt-2"
             *ngIf="!email.valid && email.touched">
               Email is required
             </p>
@@ -32,18 +32,18 @@
             required>
             <p
               *ngIf="!password.valid && password.touched"
-              class="help-message">Paassword is required.
+              class="alert alert-danger mt-2">Paassword is required.
               <span
                 *ngIf="password.errors.minlength">
                 Paassword must contain at least 6 characters.
               </span>
             </p>
           </div>
-          <p
-          class="help-message"
-          *ngIf="!f.valid && f.touched">The form is not valid!</p>
+          <!-- <p
+          class="alert alert-danger mt-2"
+          *ngIf="!f.valid && f.touched">The form is not valid!</p> -->
           <button
-          class="btn btn-primary"
+          class="btn btn-info"
           type="submit"
           [disabled]="!f.valid">Register</button>
           <p
