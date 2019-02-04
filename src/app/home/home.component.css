@@ -24,15 +24,14 @@
     height: 92vh;
     background-color: #000;
     opacity: 0.75;
-    /* transition: background 0.3s, border-radius 0.3s, opacity 0.3s; */
 }
 #backImg .img {
     position: absolute;
     z-index: -1;
     width: 100%;
     height: 92vh;
-    margin-right: -15px;
-    margin-left: -15px;
+    /* margin-right: -15px;
+    margin-left: -15px; */
     background-image: url('../images/collage-02.jpg');
     background-position: top;
     background-size: contain;

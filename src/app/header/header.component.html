@@ -2,12 +2,9 @@
 <div class="row">
   <div class="col-md-12">
     <nav class="navbar navbar-expand-lg navbar-light bg-light flex-row bd-navbar" id="header">
-        <!-- navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar -->
       <a class="navbar-brand">
           <img id="logo" src="https://angular.io/assets/images/logos/angular/shield-large.svg"/>
       </a>
-      <!-- <div class="container-fluid"> -->
-        <!-- <ul class="navbar-nav-scroll"> -->
         <ul class="nav">
           <li class="nav-item">
             <a
@@ -25,10 +22,7 @@
             >Contacts</a>
           </li>
         </ul>
-        <!-- <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex"> -->
-        <!-- <ul class="nav justify-content-end"> -->
         <ul class="nav ml-auto">
-
           <ng-template [ngIf]="!isAuthenticated()">
             <li class="nav-item">
               <a
@@ -65,29 +59,6 @@
             <li class="nav-item">
               <a class="nav-link">User: {{ getUser() }}</a>
             </li>
-
-
-            <!-- <li class="nav-item">
-                <a
-                  id="logout-btn"
-                  class="nav-link btn"
-                  (click)="logout()"
-                  >Logout</a>
-            </li>
-            <li
-            class="nav-item">
-              <a
-              class="nav-link btn"
-              (click)="onSaveData()">Save contacts</a>
-            </li>
-            <li
-            class="nav-item">
-              <a
-              class="nav-link btn"
-              (click)="onFetchData()">Fetch contacts</a>
-            </li> -->
-
-
           </ng-template>
         </ul>
     </nav>

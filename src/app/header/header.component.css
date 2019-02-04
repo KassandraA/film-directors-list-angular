@@ -2,12 +2,8 @@
     color: red;
 }
 .active {
-    /* font-weight: bold; */
     color: #e23237;
 }
-/* #signin {
-    color: green;
-} */
 #logo {
     width: 30px;
 }

@@ -40,10 +40,4 @@ export class HeaderComponent implements OnInit {
   onFetchData() {
     this.dataStorageService.getContacts();
   }
-
-  // onDropdown() {
-
-  // }
-
-
 }
