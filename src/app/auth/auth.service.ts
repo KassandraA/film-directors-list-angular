@@ -25,10 +25,11 @@ export class AuthService {
             .then(response => {
                 this.router.navigate(['/']);
                 console.log('User was signed in');
-                firebase.auth().currentUser.getIdToken()
-                    .then(
-                        (token: string) => this.token = token
-                    );
+                // firebase.auth().currentUser.getIdToken()
+                //     .then(
+                //         (token: string) => this.token = token
+                //     );
+                this.getToken();
 
             })
             .catch((error) => {
@@ -44,13 +45,15 @@ export class AuthService {
             .then(response => {
                 this.router.navigate(['/']);
                 console.log('User was registered');
-                firebase.auth().currentUser.getIdToken()
-                    .then(
-                        (token: string) => this.token = token
-                    );
+                // firebase.auth().currentUser.getIdToken()
+                //     .then(
+                //         (token: string) => this.token = token
+                //     );
+                this.getToken();
             })
             .catch((error) => {
-                Promise.reject(this.errorMessage = error.message);
+                // Promise.reject(this.errorMessage = error.message);
+                this.errorMessage = error.message;
                 console.log('RegisterUser error:', error);
             });
             return answer;

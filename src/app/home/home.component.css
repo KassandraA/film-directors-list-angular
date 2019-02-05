@@ -1,6 +1,9 @@
 #home-block {
-    padding-top: 30%;
+    /* padding-top: 30%; */
     color: #fff;
+}
+#home-block .row {
+    padding: 35% 0;
 }
 #home-block h3 {
     font-size: 50px;
@@ -21,7 +24,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 92vh;
+    height: 100%;
     background-color: #000;
     opacity: 0.75;
 }
@@ -29,9 +32,7 @@
     position: absolute;
     z-index: -1;
     width: 100%;
-    height: 92vh;
-    /* margin-right: -15px;
-    margin-left: -15px; */
+    height: 94vh;
     background-image: url('../images/collage-02.jpg');
     background-position: top;
     background-size: contain;
