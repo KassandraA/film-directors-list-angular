@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
-import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-contacts',
@@ -10,8 +9,7 @@ import { Location } from '@angular/common';
 export class ContactsComponent implements OnInit {
 
   constructor(private router: Router,
-              private route: ActivatedRoute,
-              private location: Location) { }
+              private route: ActivatedRoute) { }
 
   ngOnInit() {
   }

@@ -32,7 +32,13 @@ export class ContactDetailComponent implements OnInit {
               private router: Router,
               private auth: AuthGuard) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.route.params.subscribe(
+      (params: Params) => {
+        this.id = params['id'];
+      }
+    );
+  }
 
   onEditContact() {
     this.router.navigate(['edit'], {relativeTo: this.route});

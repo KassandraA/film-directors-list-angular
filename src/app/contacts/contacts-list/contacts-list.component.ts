@@ -21,6 +21,7 @@ export class ContactsListComponent implements OnInit, OnDestroy {
               private auth: AuthGuard) { }
 
   ngOnInit() {
+    // this.contacts = this.contactService.loadContacts();
     this.contacts = this.contactService.getContacts();
     this.subscription = this.contactService.contactsChanged
       .subscribe((contacts: Contact[]) => this.contacts = contacts);

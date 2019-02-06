@@ -1,0 +1,144 @@
+[ {
+    "countryOfLiving" : "USA, Canada",
+    "dateOfBirth" : "1964/10/09",
+    "dateOfDeath" : "",
+    "films" : [ {
+      "filmTitle" : "Cronos",
+      "year" : 1993
+    }, {
+      "filmTitle" : "Mimic",
+      "year" : 1997
+    }, {
+      "filmTitle" : "The Devil's Backbone",
+      "year" : 2001
+    }, {
+      "filmTitle" : "Blade II",
+      "year" : 2002
+    }, {
+      "filmTitle" : "Hellboy",
+      "year" : 2004
+    }, {
+      "filmTitle" : "Pan's Labyrinth",
+      "year" : 2006
+    }, {
+      "filmTitle" : "Hellboy II: The Golden Army",
+      "year" : 2008
+    }, {
+      "filmTitle" : "Pacific Rim",
+      "year" : 2013
+    }, {
+      "filmTitle" : "Crimson Peak",
+      "year" : 2015
+    }, {
+      "filmTitle" : "The Shape of Water",
+      "year" : 2017
+    } ],
+    "firstName" : "Guillermo",
+    "id" : 1,
+    "imagePath" : "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Guillermo_del_Toro_in_2017.jpg/1280px-Guillermo_del_Toro_in_2017.jpgg",
+    "lastName" : "del Toro",
+    "occupation" : "Film director, screenwriter, producer, novelist"
+  }, {
+    "countryOfLiving" : "England",
+    "dateOfBirth" : "1961/11/28",
+    "dateOfDeath" : "",
+    "films" : [ {
+      "filmTitle" : "Sólo con Tu Pareja",
+      "year" : 1991
+    }, {
+      "filmTitle" : "A Little Princess",
+      "year" : 1995
+    }, {
+      "filmTitle" : "Great Expectations",
+      "year" : 1998
+    }, {
+      "filmTitle" : "Y Tu Mamá También",
+      "year" : 2001
+    }, {
+      "filmTitle" : "Harry Potter and the Prisoner of Azkaban",
+      "year" : 2004
+    }, {
+      "filmTitle" : "Children of Men",
+      "year" : 2006
+    }, {
+      "filmTitle" : "Gravity",
+      "year" : 2013
+    }, {
+      "filmTitle" : "Roma",
+      "year" : 2018
+    } ],
+    "firstName" : "Alfonso",
+    "id" : 2,
+    "imagePath" : "https://upload.wikimedia.org/wikipedia/commons/0/00/Alfonso_Cuar%C3%B3n_%282013%29_cropped.jpg",
+    "lastName" : "Cuarón",
+    "occupation" : "Director, screenwriter, producer, editor"
+  }, {
+    "countryOfLiving" : "Italy",
+    "dateOfBirth" : "1920/01/20",
+    "dateOfDeath" : "1993/10/31",
+    "films" : [ {
+      "filmTitle" : "La Strada",
+      "year" : 1954
+    }, {
+      "filmTitle" : "Nights of Cabiria",
+      "year" : 1957
+    }, {
+      "filmTitle" : "La Dolce Vita",
+      "year" : 1960
+    }, {
+      "filmTitle" : "8½",
+      "year" : 1963
+    }, {
+      "filmTitle" : "Amarcord",
+      "year" : 1973
+    } ],
+    "firstName" : "Federico",
+    "id" : 3,
+    "imagePath" : "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Federico_Fellini_NYWTS_2.jpg/1920px-Federico_Fellini_NYWTS_2.jpg",
+    "lastName" : "Fellini",
+    "occupation" : "Filmmaker"
+  }, {
+    "countryOfLiving" : "USA",
+    "dateOfBirth" : "1946/12/18",
+    "dateOfDeath" : "",
+    "films" : [ {
+      "filmTitle" : "The Terminal",
+      "year" : 2004
+    }, {
+      "filmTitle" : "War of the Worlds",
+      "year" : 2005
+    }, {
+      "filmTitle" : "Munich",
+      "year" : 2005
+    }, {
+      "filmTitle" : "Indiana Jones and the Kingdom of the Crystal Skull",
+      "year" : 2008
+    }, {
+      "filmTitle" : "The Adventures of Tintin",
+      "year" : 2011
+    }, {
+      "filmTitle" : "War Horse",
+      "year" : 2011
+    }, {
+      "filmTitle" : "Lincoln",
+      "year" : 2012
+    }, {
+      "filmTitle" : "Bridge of Spies",
+      "year" : 2015
+    }, {
+      "filmTitle" : "The BFG",
+      "year" : 2016
+    }, {
+      "filmTitle" : "The Post",
+      "year" : 2017
+    }, {
+      "filmTitle" : "Ready Player One",
+      "year" : 2018
+    } ],
+    "firstName" : "Steven Allan",
+    "id" : 4,
+    "imagePath" : "https://upload.wikimedia.org/wikipedia/commons/5/5d/Steven_Spielberg_Cannes_2013_3.jpg",
+    "lastName" : "Spielberg",
+    "occupation" : "Film producer, film director, screenwriter"
+  } ]
+

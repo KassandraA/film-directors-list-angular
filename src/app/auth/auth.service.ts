@@ -25,10 +25,6 @@ export class AuthService {
             .then(response => {
                 this.router.navigate(['/']);
                 console.log('User was signed in');
-                // firebase.auth().currentUser.getIdToken()
-                //     .then(
-                //         (token: string) => this.token = token
-                //     );
                 this.getToken();
 
             })
@@ -45,10 +41,6 @@ export class AuthService {
             .then(response => {
                 this.router.navigate(['/']);
                 console.log('User was registered');
-                // firebase.auth().currentUser.getIdToken()
-                //     .then(
-                //         (token: string) => this.token = token
-                //     );
                 this.getToken();
             })
             .catch((error) => {

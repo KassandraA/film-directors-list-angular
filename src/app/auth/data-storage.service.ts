@@ -24,7 +24,7 @@ export class DataStorageService {
             });
     }
 
-    getContacts() {
+    fetchContacts() {
         const token = this.authService.getToken();
 
         this.httpClient.get<Contact[]>(

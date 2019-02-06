@@ -38,6 +38,6 @@ export class HeaderComponent implements OnInit {
   }
 
   onFetchData() {
-    this.dataStorageService.getContacts();
+    this.dataStorageService.fetchContacts();
   }
 }
