@@ -1,0 +1,9 @@
+@media (max-width: 767px) {
+    #contacts-list {
+        height: 350px;
+        overflow-y:scroll;
+    }
+    #contact-detail {
+        margin-top:20px;
+    }
+}

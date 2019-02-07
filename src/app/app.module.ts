@@ -11,7 +11,7 @@ import { AuthService } from './auth/auth.service';
 import { AuthModule } from './auth/auth.module';
 import { ContactService } from './contacts/contact.service';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { DataStorageService } from './auth/data-storage.service';
+import { DataStorageService } from './shared/data-storage.service';
 import { YearValidateDirective } from './shared/yearValidate.directive';
 
 @NgModule({

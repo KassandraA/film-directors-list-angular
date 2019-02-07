@@ -94,7 +94,7 @@
     } ],
     "firstName" : "Federico",
     "id" : 3,
-    "imagePath" : "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Federico_Fellini_NYWTS_2.jpg/1920px-Federico_Fellini_NYWTS_2.jpg",
+    "imagePath" : "https://m.media-amazon.com/images/M/MV5BMjE0NDI1MDU5Nl5BMl5BanBnXkFtZTgwNjQ2ODMwMzE@._V1_UY317_CR8,0,214,317_AL_.jpg",
     "lastName" : "Fellini",
     "occupation" : "Filmmaker"
   }, {
@@ -140,5 +140,186 @@
     "imagePath" : "https://upload.wikimedia.org/wikipedia/commons/5/5d/Steven_Spielberg_Cannes_2013_3.jpg",
     "lastName" : "Spielberg",
     "occupation" : "Film producer, film director, screenwriter"
-  } ]
+  }, {
+    "countryOfLiving" : "USA",
+    "dateOfBirth" : "1971-05-14",
+    "dateOfDeath" : "",
+    "films" : [ {
+      "filmTitle" : "Lick the Star",
+      "year" : 1998
+    }, {
+      "filmTitle" : "The Virgin Suicides",
+      "year" : 1999
+    }, {
+      "filmTitle" : "Lost in Translation",
+      "year" : 2003
+    }, {
+      "filmTitle" : "Marie Antoinette",
+      "year" : 2006
+    }, {
+      "filmTitle" : "Somewhere",
+      "year" : 2010
+    }, {
+      "filmTitle" : "The Bling Ring",
+      "year" : 2013
+    }, {
+      "filmTitle" : "A Very Murray Christmas",
+      "year" : 2015
+    }, {
+      "filmTitle" : "The Beguiled",
+      "year" : 2017
+    } ],
+    "firstName" : "Sofia",
+    "id" : 5,
+    "imagePath" : "https://upload.wikimedia.org/wikipedia/commons/3/35/Sofia_Coppola_Cannes_2014.jpg",
+    "lastName" : "Coppola",
+    "occupation" : "Screenwriter, director, producer, actress"
+  }, {
+    "countryOfLiving" : "USA",
+    "dateOfBirth" : "1958-08-25",
+    "dateOfDeath" : "",
+    "films" : [ {
+      "filmTitle" : "Pee-wee's Big Adventure",
+      "year" : 1985
+    }, {
+      "filmTitle" : "Batman",
+      "year" : 1989
+    }, {
+      "filmTitle" : "Batman Returns",
+      "year" : 1992
+    }, {
+      "filmTitle" : "Mars Attacks!",
+      "year" : 1996
+    }, {
+      "filmTitle" : "Planet of the Apes",
+      "year" : 2001
+    }, {
+      "filmTitle" : "Charlie and the Chocolate Factory",
+      "year" : 2005
+    }, {
+      "filmTitle" : "Alice in Wonderland",
+      "year" : 2010
+    }, {
+      "filmTitle" : "Miss Peregrine's Home for Peculiar Children",
+      "year" : 2016
+    } ],
+    "firstName" : "Tim",
+    "id" : 6,
+    "imagePath" : "https://m.media-amazon.com/images/M/MV5BMTcwNTc4NTMzOF5BMl5BanBnXkFtZTYwMzc5ODYz._V1_UX214_CR0,0,214,317_AL_.jpg",
+    "lastName" : "Burton",
+    "occupation" : "Film director, film producer, writer, artist"
+  }, {
+    "countryOfLiving" : "USA",
+    "dateOfBirth" : "1944-05-14",
+    "dateOfDeath" : "",
+    "films" : [ {
+      "filmTitle" : "American Graffiti",
+      "year" : 1973
+    }, {
+      "filmTitle" : "Star Wars",
+      "year" : 1977
+    }, {
+      "filmTitle" : "Star Wars: Episode I – The Phantom Menace",
+      "year" : 1999
+    }, {
+      "filmTitle" : "Star Wars: Episode II – Attack of the Clones",
+      "year" : 2002
+    }, {
+      "filmTitle" : "\tStar Wars: Episode III – Revenge of the Sith",
+      "year" : 2005
+    } ],
+    "firstName" : "George       ",
+    "id" : 7,
+    "imagePath" : "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/George_Lucas_cropped_2009.jpg/440px-George_Lucas_cropped_2009.jpg",
+    "lastName" : "Lucas",
+    "occupation" : "Filmmaker, director, producer, writer, entrepreneur"
+  }, {
+    "countryOfLiving" : "Russia, Italy",
+    "dateOfBirth" : "1932-04-04",
+    "dateOfDeath" : "1986-12-29",
+    "films" : [ {
+      "filmTitle" : "Ivan's Childhood",
+      "year" : 1962
+    }, {
+      "filmTitle" : "Andrei Rublev ",
+      "year" : 1966
+    }, {
+      "filmTitle" : "Solaris ",
+      "year" : 1972
+    }, {
+      "filmTitle" : "Mirror",
+      "year" : 1975
+    }, {
+      "filmTitle" : "Stalker",
+      "year" : 1979
+    }, {
+      "filmTitle" : "Nostalghia ",
+      "year" : 1983
+    }, {
+      "filmTitle" : "The Sacrifice",
+      "year" : 1986
+    } ],
+    "firstName" : "Andrei ",
+    "id" : 8,
+    "imagePath" : "https://upload.wikimedia.org/wikipedia/ru/thumb/b/b5/Andrei_Tarkovsky.jpg/500px-Andrei_Tarkovsky.jpg",
+    "lastName" : "Tarkovsky",
+    "occupation" : "Film director, screenwriter"
+  }, {
+    "countryOfLiving" : "USA",
+    "dateOfBirth" : "1946-01-20",
+    "dateOfDeath" : "",
+    "films" : [ {
+      "filmTitle" : "The Elephant Man",
+      "year" : 1980
+    }, {
+      "filmTitle" : "Dune",
+      "year" : 1984
+    }, {
+      "filmTitle" : "\tBlue Velvet",
+      "year" : 1986
+    }, {
+      "filmTitle" : "Twin Peaks: Fire Walk with Me\t",
+      "year" : 1992
+    }, {
+      "filmTitle" : "Mulholland Drive",
+      "year" : 2001
+    } ],
+    "firstName" : "David ",
+    "id" : 9,
+    "imagePath" : "https://m.media-amazon.com/images/M/MV5BMTQ1MTY2MTY2Nl5BMl5BanBnXkFtZTcwMDg1ODYwNA@@._V1_UY317_CR20,0,214,317_AL_.jpg",
+    "lastName" : "Lynch",
+    "occupation" : "Director, screenwriter, producer, painter, musician, sound designer, photographer, actor"
+  }, {
+    "countryOfLiving" : "USA",
+    "dateOfBirth" : "1939-04-07",
+    "dateOfDeath" : "",
+    "films" : [ {
+      "filmTitle" : "Tonight for Sure",
+      "year" : 1962
+    }, {
+      "filmTitle" : "The Godfather",
+      "year" : 1972
+    }, {
+      "filmTitle" : "The Godfather Part II",
+      "year" : 1974
+    }, {
+      "filmTitle" : "The Godfather Part III",
+      "year" : 1990
+    }, {
+      "filmTitle" : "Jack",
+      "year" : 1996
+    }, {
+      "filmTitle" : "\tYouth Without Youth",
+      "year" : 2007
+    }, {
+      "filmTitle" : "\tTwixt",
+      "year" : 2011
+    } ],
+    "firstName" : "Francis Ford ",
+    "id" : 10,
+    "imagePath" : "https://m.media-amazon.com/images/M/MV5BMTM5NDU3OTgyNV5BMl5BanBnXkFtZTcwMzQxODA0NA@@._V1_.jpg",
+    "lastName" : "Coppola",
+    "occupation" : "Film director, screenwriter, film producer, film composer"
+  }
+]
 

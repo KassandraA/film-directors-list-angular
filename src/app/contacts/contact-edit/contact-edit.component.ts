@@ -14,6 +14,7 @@ export class ContactEditComponent implements OnInit {
   contactForm: FormGroup;
   id: number;
   editMode = false;
+  defaultPersonImg = 'https://is.muni.cz/th/qoktm/48445694/48476578/assets/apps/share/img/random-guy.png';
 
   constructor(private route: ActivatedRoute,
               private router: Router,
@@ -68,8 +69,7 @@ export class ContactEditComponent implements OnInit {
     let contactId;
     let contactFirstName = '';
     let contactLastName = '';
-    // tslint:disable-next-line:max-line-length
-    let contactImagePath = 'https://www.freeiconspng.com/uploads/person-icon-person-icon-clipart-image-from-our-icon-clipart-category--9.png';
+    let contactImagePath = this.defaultPersonImg;
     let contactDateOfBirth = '';
     let contactDateOfDeath = '';
     let contactOccupation = '';
@@ -82,6 +82,8 @@ export class ContactEditComponent implements OnInit {
       contactFirstName = contact.firstName;
       contactLastName = contact.lastName;
       contactImagePath = contact.imagePath;
+      // contactImagePath = contact.imagePath ? contact.imagePath : this.defaultPersonImg;
+      // console.log('contactImagePath', contactImagePath);
       contactDateOfBirth = contact.dateOfBirth ? new Date(contact.dateOfBirth).toISOString().substring(0, 10) : '';
       contactDateOfDeath = contact.dateOfDeath ? new Date(contact.dateOfDeath).toISOString().substring(0, 10) : '';
       contactOccupation = contact.occupation;

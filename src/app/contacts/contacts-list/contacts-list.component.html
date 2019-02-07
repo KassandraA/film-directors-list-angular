@@ -1,10 +1,10 @@
 <div class="row">
-  <div class="col-sm-12 col-md-12 col-lg-12 my-3">
+  <div class="col-sm-12 col-md-12 col-lg-8">
     <button
-    class="btn btn-info"
+    class="btn btn-info mb-4"
     (click)="onNewContact()"
     [disabled]="!auth.canActivate()">New Contact</button>
-    <p *ngIf="!auth.canActivate()">Please, authorize first!</p>
+    <!-- <p *ngIf="!auth.canActivate()">Please, authorize first!</p> ???? -->
   </div>
 </div>
 

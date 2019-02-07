@@ -1,15 +1,15 @@
-<h3>
+<h3 class="my-3">
   Notable works of {{ contact.firstName + ' ' + contact.lastName }}
 </h3>
 <div class="row">
     <div class="col-sm-3 col-md-3 col-lg-3">
-      <img src="{{ contact.imagePath }}" alt="" class="img-fluid">
+      <img src="{{ contact.imagePath }}" alt="" class="img-fluid detail-img">
     </div>
     <br>
     <div class="col-sm-9 col-md-9 col-lg-9">
       <ul class="list-group">
         <li
-        class="list-group-item my-1"
+        class="list-group-item mb-2"
         *ngFor="let film of contact.films">
           {{ film.filmTitle }}
           <span class="badge badge-secondary float-md-right">

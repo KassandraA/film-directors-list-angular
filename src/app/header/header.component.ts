@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../auth/auth.service';
-import { DataStorageService } from '../auth/data-storage.service';
+import { DataStorageService } from '../shared/data-storage.service';
 import { HttpResponse, HttpEventType, HttpEvent } from '@angular/common/http';
 
 @Component({

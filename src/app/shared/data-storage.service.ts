@@ -4,7 +4,7 @@ import { map } from 'rxjs/operators';
 
 import { ContactService } from '../contacts/contact.service';
 import { Contact } from '../contacts/contact.model';
-import { AuthService } from './auth.service';
+import { AuthService } from '../auth/auth.service';
 
 @Injectable()
 export class DataStorageService {
