@@ -4,6 +4,8 @@
 .form-control {
     height: auto;
 }
-.detail-img {
+/* .detail-img {
+    display: block;
+    margin: 0 auto 20px auto;
     border-radius:.25rem;
-}
+} */

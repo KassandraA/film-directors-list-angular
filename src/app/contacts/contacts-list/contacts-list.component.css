@@ -1,0 +1,6 @@
+@media (max-width: 767px) {
+    #contacts-list-block {
+        height: 230px;
+        overflow-y:scroll;
+    }
+}
