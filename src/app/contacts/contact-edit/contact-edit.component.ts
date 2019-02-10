@@ -32,10 +32,10 @@ export class ContactEditComponent implements OnInit {
 
   onSubmit() {
     if (this.editMode) {
-      this.contactService.updateContact(this.id, this.contactForm.value);
+      this.contactService.updateContact(this.id, this.contactForm.value); // trim
       console.log('Updated: ', this.id, this.contactForm.value);
     } else {
-      this.contactService.addContact(this.contactForm.value);
+      this.contactService.addContact(this.contactForm.value); //  trim
       console.log('Added: ', this.contactForm.value);
     }
     this.onCancel();
@@ -82,8 +82,8 @@ export class ContactEditComponent implements OnInit {
       contactFirstName = contact.firstName;
       contactLastName = contact.lastName;
       contactImagePath = contact.imagePath;
-      // contactImagePath = contact.imagePath ? contact.imagePath : this.defaultPersonImg;
-      // console.log('contactImagePath', contactImagePath);
+      contactImagePath = contact.imagePath ? contact.imagePath : this.defaultPersonImg;
+      console.log('contactImagePath', contactImagePath, contact.imagePath);
       contactDateOfBirth = contact.dateOfBirth ? new Date(contact.dateOfBirth).toISOString().substring(0, 10) : '';
       contactDateOfDeath = contact.dateOfDeath ? new Date(contact.dateOfDeath).toISOString().substring(0, 10) : '';
       contactOccupation = contact.occupation;
@@ -93,11 +93,8 @@ export class ContactEditComponent implements OnInit {
         for (const film of contact.films) {
           contactFilms.push(
             new FormGroup({
-              filmTitle: new FormControl(film.filmTitle, Validators.required),
-                year: new FormControl(film.year,
-                  [Validators.required,
-                  Validators.pattern(/^[1-9]+[0-9]*$/)
-                  ])
+              filmTitle: new FormControl(film.filmTitle.trim(), [Validators.required, Validators.pattern(/\w+/)]),
+              year: new FormControl(film.year, [Validators.required, Validators.pattern(/^[1-2]{1}[0-9]{3}$/)])
             })
           );
         }
@@ -106,13 +103,13 @@ export class ContactEditComponent implements OnInit {
 
     this.contactForm = new FormGroup({
       id: new FormControl(contactId),
-      firstName: new FormControl(contactFirstName, Validators.required),
-      lastName: new FormControl(contactLastName, Validators.required),
+      firstName: new FormControl(contactFirstName.trim(), [Validators.required, Validators.pattern(/\w+/)]),
+      lastName: new FormControl(contactLastName.trim(), [Validators.required, Validators.pattern(/\w+/)]),
       imagePath: new FormControl(contactImagePath),
       dateOfBirth: new FormControl(contactDateOfBirth),
       dateOfDeath: new FormControl(contactDateOfDeath),
-      occupation: new FormControl(contactOccupation, Validators.required),
-      countryOfLiving: new FormControl(contactCountry),
+      occupation: new FormControl(contactOccupation.trim(), [Validators.required, Validators.pattern(/[(A-Za-z)]\w*/)]),
+      countryOfLiving: new FormControl(contactCountry.trim(), Validators.pattern(/\w+/)),
       films: contactFilms
     },
     { validators: identifyYearValidator });

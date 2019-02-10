@@ -14,7 +14,6 @@ export class DataStorageService {
 
     storeContacts() {
         const token = this.authService.getToken();
-
         return this.httpClient.put(
             'https://angular-project-ks.firebaseio.com/contacts.json',
             this.contactService.getContacts(),
