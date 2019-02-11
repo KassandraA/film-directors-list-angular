@@ -37,10 +37,10 @@ export class ContactEditComponent implements OnInit, OnDestroy {
 
   onSubmit() {
     if (this.editMode) {
-      this.contactService.updateContact(this.id, this.contactForm.value); // trim
+      this.contactService.updateContact(this.id, this.contactForm.value);
       console.log('Updated: ', this.id, this.contactForm.value);
     } else {
-      this.contactService.addContact(this.contactForm.value); //  trim
+      this.contactService.addContact(this.contactForm.value);
       console.log('Added: ', this.contactForm.value);
     }
     this.onCancel();

@@ -26,33 +26,31 @@ export class ContactService {
     }
 
     loadContacts() {
-        // if (this.contacts.length === 0) { // ?
-            const contactList = [];
-            this.httpClient.get<Contact[]>(this.contactsJSON)
-                .pipe(map(
-                    (contacts: Contact[]) => {
-                        for (let contact of contacts) {
-                            contact = new Contact(
-                                contact.id,
-                                contact.firstName,
-                                contact.lastName,
-                                contact.occupation,
-                                contact.dateOfBirth,
-                                contact.dateOfDeath,
-                                contact.imagePath,
-                                contact.countryOfLiving,
-                                contact.films
-                                );
-                            contactList.push(contact);
-                        }
-                        contacts = contactList;
-                        return contacts;
+        const contactList = [];
+        this.httpClient.get<Contact[]>(this.contactsJSON)
+            .pipe(map(
+                (contacts: Contact[]) => {
+                    for (let contact of contacts) {
+                        contact = new Contact(
+                            contact.id,
+                            contact.firstName,
+                            contact.lastName,
+                            contact.occupation,
+                            contact.dateOfBirth,
+                            contact.dateOfDeath,
+                            contact.imagePath,
+                            contact.countryOfLiving,
+                            contact.films
+                            );
+                        contactList.push(contact);
                     }
-                ))
-                .subscribe((contacts: Contact[]) => {
-                    this.setContacts(contacts);
-                });
-        // }
+                    contacts = contactList;
+                    return contacts;
+                }
+            ))
+            .subscribe((contacts: Contact[]) => {
+                this.setContacts(contacts);
+            });
         return this.contacts.slice();
     }
 

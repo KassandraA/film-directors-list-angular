@@ -18,7 +18,8 @@ export class ContactsListComponent implements OnInit, OnDestroy {
 
   constructor(private router: Router,
               private route: ActivatedRoute,
-              private contactService: ContactService) {}
+              private contactService: ContactService,
+              private auth: AuthGuard) {}
 
   ngOnInit() {
     this.contacts = this.contactService.getContacts();
