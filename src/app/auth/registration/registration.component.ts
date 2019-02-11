@@ -19,9 +19,7 @@ export class RegistrationComponent implements OnInit {
     const email = form.value.email;
     const password = form.value.password;
     this.authService.registerUser(email, password)
-      .then(result => {
-        this.errorMessage = this.authService.errorMessage;
-      });
+      .then(() => this.errorMessage = this.authService.errorMessage);
   }
 
 }

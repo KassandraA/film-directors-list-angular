@@ -29,7 +29,7 @@ export class AuthService {
 
             })
             .catch((error) => {
-                Promise.reject(this.errorMessage = error.message);
+                this.errorMessage = error.message;
                 console.log('SigninUser error', error);
             });
         return answer;
@@ -44,7 +44,6 @@ export class AuthService {
                 this.getToken();
             })
             .catch((error) => {
-                // Promise.reject(this.errorMessage = error.message);
                 this.errorMessage = error.message;
                 console.log('RegisterUser error:', error);
             });
