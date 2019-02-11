@@ -1,9 +1,8 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { trigger, state, style } from '@angular/animations';
+import { Router, ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 
 import { Contact } from '../contact.model';
-import { Router, ActivatedRoute, Params, RouterOutlet } from '@angular/router';
 import { ContactService } from '../contact.service';
 import { AuthGuard } from '../../auth/auth-guard.service';
 
@@ -19,8 +18,7 @@ export class ContactsListComponent implements OnInit, OnDestroy {
 
   constructor(private router: Router,
               private route: ActivatedRoute,
-              private contactService: ContactService,
-              private auth: AuthGuard) {}
+              private contactService: ContactService) {}
 
   ngOnInit() {
     this.contacts = this.contactService.getContacts();
