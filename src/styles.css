@@ -1,6 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 * {
-    /* outline: 1px solid red; */
     font-family: Tahoma, Geneva, sans-serif;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -19,9 +18,7 @@ a:hover {
     cursor: pointer;
 }
 @media (max-width: 767px) {
-    /* #contacts-list-block { */
-    /* :host-context(#contact-detail-block) #contacts-list-block {
-        height: 230px;
-        overflow-y: scroll;
-    } */
+    .detail-img {
+        max-width: 200px;
+    }
 }

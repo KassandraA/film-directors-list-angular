@@ -27,7 +27,7 @@
           </div>
           <div
           *ngIf="!contactForm.get('firstName').valid && contactForm.get('firstName').touched"
-          class="alert alert-danger">
+          class="alert alert-danger my-1">
             Please, enter the valid First Name!
           </div>
         </div>
@@ -46,7 +46,7 @@
           </div>
           <div
           *ngIf="!contactForm.get('lastName').valid && contactForm.get('lastName').touched"
-          class="alert alert-danger">
+          class="alert alert-danger my-1">
             Please, enter the valid Last Name!
           </div>
         </div>
@@ -97,7 +97,7 @@
             </div>
             <div
             *ngIf="contactForm.errors?.datesConflict"
-            class="alert alert-danger">
+            class="alert alert-danger my-1">
               Please, enter the correct dates!
             </div>
           </div>
@@ -118,7 +118,7 @@
           </div>
           <div
           *ngIf="!contactForm.get('occupation').valid && contactForm.get('occupation').touched"
-          class="alert alert-danger">
+          class="alert alert-danger my-1">
             Please, enter the valid Occupation!
           </div>
         </div>
@@ -137,7 +137,7 @@
           </div>
           <div
           *ngIf="!contactForm.get('countryOfLiving').valid && contactForm.get('countryOfLiving').touched"
-          class="alert alert-danger">
+          class="alert alert-danger my-1">
             Please, enter the valid Country!
           </div>
         </div>
@@ -218,7 +218,7 @@
     <div class="col-sm-12 col-md-12 col-lg-9 offset-lg-3">
       <p
       *ngIf="!contactForm.valid && contactForm.touched"
-      class="alert alert-danger">
+      class="alert alert-danger my-2">
         The form is not valid!
       </p>
     </div>

@@ -14,12 +14,12 @@ export class ContactService {
     idDead: boolean;
     contactListFullHeight = true;
 
+    private contacts: Contact[] = [];
+
     @Output() changeHeight: EventEmitter<boolean> = new EventEmitter();
 
     constructor (private router: Router,
                 private httpClient: HttpClient) {}
-
-    private contacts: Contact[] = [];
 
     getContacts() {
         return this.contacts.slice();
@@ -65,7 +65,7 @@ export class ContactService {
     }
 
     addContact(contact: Contact) {
-        contact.id = this.contacts.length + 1;
+        contact.id = this.contacts[this.contacts.length - 1].id + 1;
         contact = new Contact(
             contact.id,
             contact.firstName,

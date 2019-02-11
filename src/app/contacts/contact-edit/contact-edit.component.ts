@@ -60,7 +60,7 @@ export class ContactEditComponent implements OnInit, OnDestroy {
         filmTitle: new FormControl(null, Validators.required),
         year: new FormControl(null,
           [Validators.required,
-          Validators.pattern(/^[1-9]+[0-9]*$/)
+          Validators.pattern(/^[1-2]{1}[0-9]{3}$/)
         ])
       })
     );
@@ -88,7 +88,6 @@ export class ContactEditComponent implements OnInit, OnDestroy {
       contactLastName = contact.lastName;
       contactImagePath = contact.imagePath;
       contactImagePath = contact.imagePath ? contact.imagePath : this.defaultPersonImg;
-      console.log('contactImagePath', contactImagePath, contact.imagePath);
       contactDateOfBirth = contact.dateOfBirth ? new Date(contact.dateOfBirth).toISOString().substring(0, 10) : '';
       contactDateOfDeath = contact.dateOfDeath ? new Date(contact.dateOfDeath).toISOString().substring(0, 10) : '';
       contactOccupation = contact.occupation;
