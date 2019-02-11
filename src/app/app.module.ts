@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -27,7 +28,7 @@ import { YearValidateDirective } from './shared/yearValidate.directive';
     HttpClientModule,
     AuthModule,
     AppRoutingModule,
-    NgbDropdownModule
+    NgbDropdownModule,
   ],
   providers: [
     AuthService,

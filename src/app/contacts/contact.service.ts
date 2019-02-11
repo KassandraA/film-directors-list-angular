@@ -1,16 +1,20 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Output } from '@angular/core';
+import { EventEmitter } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
 import { Subject } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 import { Contact, Film } from './contact.model';
-import { HttpClient } from '@angular/common/http';
-import { map } from 'rxjs/operators';
 
 @Injectable()
 export class ContactService {
     contactsChanged = new Subject<Contact[]>();
-    idDead: boolean;
     contactsJSON = '../../assets/contacts.json';
+    idDead: boolean;
+    contactListFullHeight = true;
+
+    @Output() changeHeight: EventEmitter<boolean> = new EventEmitter();
 
     constructor (private router: Router,
                 private httpClient: HttpClient) {}
@@ -104,5 +108,10 @@ export class ContactService {
             age--;
         }
         return age;
+    }
+
+    changeContactsHeight(prop) {
+        this.contactListFullHeight = prop;
+        this.changeHeight.emit(this.contactListFullHeight);
     }
 }

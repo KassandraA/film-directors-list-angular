@@ -1,6 +1,9 @@
 @media (max-width: 767px) {
-    #contacts-list-block {
+    .widen {
+        height: auto;
+     }
+    .shorten {
         height: 230px;
-        overflow-y:scroll;
+        overflow-y: scroll;
     }
 }

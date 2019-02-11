@@ -10,7 +10,7 @@ import { identifyYearValidator } from '../../shared/yearValidate.directive';
   templateUrl: './contact-edit.component.html',
   styleUrls: ['./contact-edit.component.css']
 })
-export class ContactEditComponent implements OnInit {
+export class ContactEditComponent implements OnInit, OnDestroy {
   contactForm: FormGroup;
   id: number;
   editMode = false;
@@ -28,6 +28,11 @@ export class ContactEditComponent implements OnInit {
         this.initForm();
       }
     );
+    this.contactService.changeContactsHeight(false);
+  }
+
+  ngOnDestroy() {
+    this.contactService.changeContactsHeight(true);
   }
 
   onSubmit() {

@@ -4,7 +4,11 @@
       <app-contacts-list></app-contacts-list>
       <div class="separator"></div>
     </div>
-    <div class="col-sm-12 col-md-8 col-lg-8" id="contact-detail">
+    <div
+    class="col-sm-12 col-md-8 col-lg-8"
+    id="contact-detail">
+    <!-- [@listToggle]="contactListState(outlet)"> -->
+      <!-- <router-outlet #outlet="outlet"></router-outlet> -->
       <router-outlet></router-outlet>
     </div>
   </div>

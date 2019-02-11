@@ -18,3 +18,10 @@ a:hover {
 .nav-tabs {
     cursor: pointer;
 }
+@media (max-width: 767px) {
+    /* #contacts-list-block { */
+    /* :host-context(#contact-detail-block) #contacts-list-block {
+        height: 230px;
+        overflow-y: scroll;
+    } */
+}

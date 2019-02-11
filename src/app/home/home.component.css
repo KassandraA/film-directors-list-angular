@@ -1,17 +1,10 @@
-/* h3 {
-    font-family: "Arial Black", Gadget, sans-serif;
-} */
 .home-btn {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 #home-block {
-    /* padding-top: 30%; */
     color: #fff;
     height: 94vh;
-}
-#home-block .row {
-    /* padding: 35% 0; */
 }
 #home-block h3 {
     font-size: 50px;

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Router, Params, ActivatedRoute } from '@angular/router';
 
 import { ContactService } from '../contact.service';
@@ -11,7 +11,7 @@ export type TabType = 'info' | 'films';
   templateUrl: './contact-detail.component.html',
   styleUrls: ['./contact-detail.component.css']
 })
-export class ContactDetailComponent implements OnInit {
+export class ContactDetailComponent implements OnInit, OnDestroy {
   id: number;
   tab: TabType = 'info';
 
@@ -38,11 +38,17 @@ export class ContactDetailComponent implements OnInit {
         this.id = params['id'];
       }
     );
+    this.contactService.changeContactsHeight(false);
+  }
+
+  ngOnDestroy() {
+    this.contactService.changeContactsHeight(true);
   }
 
   onEditContact() {
     this.router.navigate(['edit'], {relativeTo: this.route});
   }
+
   onDeleteContact() {
     this.contactService.deleteContact(this.id);
     this.router.navigate(['/contacts']);
