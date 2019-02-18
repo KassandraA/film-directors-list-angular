@@ -13,8 +13,10 @@ import { AuthGuard } from '../../auth/auth-guard.service';
 })
 export class ContactsListComponent implements OnInit, OnDestroy {
   contacts: Contact[] = [];
-  private subscription: Subscription;
+  authenticated = this.auth;
   contactsHeight = this.contactService.contactListFullHeight;
+
+  private subscription: Subscription;
 
   constructor(private router: Router,
               private route: ActivatedRoute,

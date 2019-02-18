@@ -14,6 +14,7 @@ export type TabType = 'info' | 'films';
 export class ContactDetailComponent implements OnInit, OnDestroy {
   id: number;
   tab: TabType = 'info';
+  authenticated = this.auth;
 
   get showInfoTab() {
     return this.tab === 'info';

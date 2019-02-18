@@ -25,15 +25,15 @@
       <button
       class="btn btn-info"
       (click)="onEditContact()"
-      [disabled]="!auth.canActivate()">Edit</button>
+      [disabled]="!authenticated.canActivate()">Edit</button>
     </div>
     <div class="col-6 col-sm-6 col-md-6 col-lg-3 align-content-center">
       <button
       class="btn btn-danger"
       (click)="onDeleteContact()"
-      [disabled]="!auth.canActivate()">Delete</button>
+      [disabled]="!authenticated.canActivate()">Delete</button>
     </div>
     <div class="col-sm-12 col-md-12 col-lg-9 offset-lg-3">
-      <p *ngIf="!auth.canActivate()">Please, authorize first!</p>
+      <p *ngIf="!authenticated.canActivate()">Please, authorize first!</p>
     </div>
   </div>
