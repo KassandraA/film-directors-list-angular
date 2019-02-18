@@ -1,0 +1,9 @@
+@media (max-width: 767px) {
+    .widen {
+        height: auto;
+     }
+    .shorten {
+        height: 230px;
+        overflow-y: scroll;
+    }
+}

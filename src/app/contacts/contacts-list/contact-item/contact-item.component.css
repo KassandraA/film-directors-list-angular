@@ -1,0 +1,19 @@
+.list-group-item.active {
+    background-color: #e9ecef;
+    border-color: #ced4da;
+    color: inherit;
+}
+.contact-link {}
+.contact-link a {
+    position: relative;
+    border-radius: .25rem;
+}
+.contact-link-img {
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    right: 0;
+    height: 100%;
+    border-top-right-radius: .25rem;;
+    border-bottom-right-radius: .25rem;;
+}

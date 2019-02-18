@@ -1,0 +1,58 @@
+.home-btn {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#home-block {
+    color: #fff;
+    height: 94vh;
+}
+#home-block h3 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+}
+#home-block h5 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+#home-block h5::before {
+    content: '#';
+}
+#backImg .background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.75;
+}
+#backImg .img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 94vh;
+    background-image: url('../images/collage-02.jpg');
+    background-position: top;
+    background-size: contain;
+}
+.home-btn {
+    margin: 0 0 20px 0;
+    padding: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    line-height: 60px;
+    letter-spacing: 2px;
+}
+.home-btn:hover {
+    color: #000;
+    background-color: #ffffff;
+}

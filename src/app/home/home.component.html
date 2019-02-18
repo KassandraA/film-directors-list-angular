@@ -1,0 +1,41 @@
+<div class="container-fluid">
+<div class="row">
+  <div id="backImg">
+    <div class="img">
+      <div class="background-overlay"></div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="row align-items-center justify-content-center" id="home-block">
+      <div class="col-xs-12 col-md-8 col-lg-6">
+        <div class="row">
+
+          <ng-template [ngIf]="isAuthenticated()">
+              <div class="col-md-12 text-center mb-5">
+                <h3>Welcome, {{ getUser() }}!</h3>
+              </div>
+              <div class="col-md-12 text-center">
+                <button
+                class="btn btn-block home-btn"
+                [routerLink]="['contacts', 'new']">Add new contact</button>
+              </div>
+          </ng-template>
+
+          <ng-template [ngIf]="!isAuthenticated()">
+              <div class="col-md-12 text-center mb-5">
+                <h5>Simple project using Angular 7 and Bootstrap</h5>
+                <h3>{{ title }}</h3>
+              </div>
+            <div class="col-md-6">
+              <button class="btn btn-block home-btn" routerLink="/signin">Login</button>
+            </div>
+            <div class="col-md-6">
+              <button class="btn btn-block home-btn" routerLink="/registration">Register</button>
+            </div>
+          </ng-template>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

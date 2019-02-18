@@ -1,0 +1,30 @@
+#header {
+    height: 6vh;
+}
+#header li a {
+    text-transform: uppercase;
+}
+#logo {
+    width: 30px;
+}
+#logout-btn,
+.active {
+    color: #e23237;
+}
+a,
+.dropdown.btn {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-weight: 900;
+}
+.dropdown.btn {
+    text-transform: uppercase;
+    color: #17a2b8;
+}
+#header .userName {
+    text-transform: lowercase;
+}
+@media (max-width: 700px) {
+    #header {
+        height: auto;
+    }
+}

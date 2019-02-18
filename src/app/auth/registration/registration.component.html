@@ -1,0 +1,50 @@
+<div class="container-fluid mt-4">
+  <div class="row">
+    <div class="col-md-6 mx-auto">
+        <h1>Registration</h1>
+        <form (ngSubmit)="onRegister(f)" #f="ngForm">
+          <div class="form-group">
+            <input
+            type="email"
+            name="email"
+            class="form-control"
+            placeholder="Enter email"
+            ngModel
+            #email="ngModel"
+            required>
+            <p
+            class="alert alert-danger my-2"
+            *ngIf="!email.valid && email.touched">
+              Email is required
+            </p>
+          </div>
+          <div class="form-group">
+            <input
+            type="password"
+            name="password"
+            class="form-control"
+            placeholder="Enter password"
+            ngModel
+            #password="ngModel"
+            minlength="6"
+            required>
+            <p
+              *ngIf="!password.valid && password.touched"
+              class="alert alert-danger my-2">Paassword is required.
+              <span
+                *ngIf="password.errors.minlength">
+                Paassword must contain at least 6 characters.
+              </span>
+            </p>
+          </div>
+          <button
+          class="btn btn-info"
+          type="submit"
+          [disabled]="!f.valid">Register</button>
+          <p
+          class="alert alert-danger my-2"
+          *ngIf="errorMessage">Error: {{ errorMessage }}</p>
+        </form>
+      </div>
+    </div>
+  </div>

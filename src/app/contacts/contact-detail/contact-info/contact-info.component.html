@@ -1,0 +1,64 @@
+<h3 class="my-3">
+  {{ contact.firstName + ' ' + contact.lastName  }}
+</h3>
+<div class="row">
+    <div class="col-sm-3 col-md-3 col-lg-3">
+      <img src="{{ contact.imagePath }}" alt="" class="img-fluid rounded mx-auto d-block mb-2 detail-img">
+    </div>
+
+    <div class="col-sm-9 col-md-9 col-lg-9">
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <span class="input-group-text">First name</span>
+        </div>
+        <p class="form-control">{{ contact.firstName }}</p>
+      </div>
+
+      <div class="input-group my-2">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Last name</span>
+        </div>
+        <p class="form-control">{{ contact.lastName }}</p>
+      </div>
+
+      <ng-template [ngIf]="contact.dateOfBirth !== ''">
+        <div class="input-group my-2">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Date Of Birth</span>
+          </div>
+          <p class="form-control">{{ contact.dateOfBirth | date }}
+            <span
+            *ngIf="contact.dateOfDeath === ''"> ({{ getAge() }} years old)</span>
+          </p>
+        </div>
+      </ng-template>
+
+      <ng-template [ngIf]="contact.dateOfDeath !== ''">
+        <div
+        class="input-group my-2">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Date Of Death</span>
+          </div>
+          <p class="form-control">{{ contact.dateOfDeath | date }}
+            <span> ({{ getAge() }} years old)</span>
+          </p>
+        </div>
+      </ng-template>
+      
+      <div class="input-group my-2">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Occupation</span>
+        </div>
+        <p class="form-control">{{ contact.occupation }}</p>
+      </div>
+      
+      <ng-template [ngIf]="contact.countryOfLiving !== ''">
+        <div class="input-group my-2">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Country</span>
+          </div>
+          <p class="form-control">{{ contact.countryOfLiving }}</p>
+        </div>
+      </ng-template>
+    </div>
+  </div>

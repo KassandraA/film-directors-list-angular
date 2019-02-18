@@ -1,0 +1,64 @@
+<header id="header" class="">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light flex-row bd-navbar">
+    <a class="navbar-brand">
+        <img id="logo" src="https://angular.io/assets/images/logos/angular/shield-large.svg"/>
+    </a>
+      <ul class="nav">
+        <li class="nav-item">
+          <a
+          class="nav-link"
+          routerLink="/"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >Home</a>
+        </li>
+        <li class="nav-item">
+          <a
+          class="nav-link"
+          routerLink="/contacts"
+          routerLinkActive="active"
+          >Contacts</a>
+        </li>
+      </ul>
+      <ul class="nav ml-auto">
+        <ng-template [ngIf]="!isAuthenticated()">
+          <li class="nav-item">
+            <a
+            id="signin"
+            class="nav-link"
+            routerLink="/signin"
+            routerLinkActive="active">Login</a>
+          </li>
+          <li class="nav-item">
+              <a
+              class="nav-link"
+              routerLink="/registration"
+              routerLinkActive="active">Register</a>
+          </li>
+        </ng-template>
+
+        <ng-template [ngIf]="isAuthenticated()">
+          <div ngbDropdown class="d-inline-block">
+            <button class="btn dropdown" id="dropdownBasic1" ngbDropdownToggle>Manage</button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+              <button class="dropdown-item">
+                <a id="logout-btn" (click)="logout()"
+                >Logout</a>
+              </button>
+              <button class="dropdown-item">
+                <a (click)="onSaveData()">Save contacts</a>
+              </button>
+              <button class="dropdown-item">
+                <a (click)="onFetchData()">Fetch contacts</a>
+              </button>
+            </div>
+          </div>
+
+          <li class="nav-item">
+            <a class="nav-link userName">User: {{ getUser() }}</a>
+          </li>
+        </ng-template>
+      </ul>
+  </nav>
+
+</header>

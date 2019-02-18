@@ -1,0 +1,320 @@
+[ {
+    "countryOfLiving" : "USA, Canada",
+    "dateOfBirth" : "1964/10/09",
+    "dateOfDeath" : "",
+    "films" : [ {
+      "filmTitle" : "Cronos",
+      "year" : 1993
+    }, {
+      "filmTitle" : "Mimic",
+      "year" : 1997
+    }, {
+      "filmTitle" : "The Devil's Backbone",
+      "year" : 2001
+    }, {
+      "filmTitle" : "Blade II",
+      "year" : 2002
+    }, {
+      "filmTitle" : "Hellboy",
+      "year" : 2004
+    }, {
+      "filmTitle" : "Pan's Labyrinth",
+      "year" : 2006
+    }, {
+      "filmTitle" : "Hellboy II: The Golden Army",
+      "year" : 2008
+    }, {
+      "filmTitle" : "Pacific Rim",
+      "year" : 2013
+    }, {
+      "filmTitle" : "Crimson Peak",
+      "year" : 2015
+    }, {
+      "filmTitle" : "The Shape of Water",
+      "year" : 2017
+    } ],
+    "firstName" : "Guillermo",
+    "id" : 1,
+    "imagePath" : "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Guillermo_del_Toro_in_2017.jpg/1280px-Guillermo_del_Toro_in_2017.jpgg",
+    "lastName" : "del Toro",
+    "occupation" : "Film director, screenwriter, producer, novelist"
+  }, {
+    "countryOfLiving" : "England",
+    "dateOfBirth" : "1961/11/28",
+    "dateOfDeath" : "",
+    "films" : [ {
+      "filmTitle" : "Sólo con Tu Pareja",
+      "year" : 1991
+    }, {
+      "filmTitle" : "A Little Princess",
+      "year" : 1995
+    }, {
+      "filmTitle" : "Great Expectations",
+      "year" : 1998
+    }, {
+      "filmTitle" : "Y Tu Mamá También",
+      "year" : 2001
+    }, {
+      "filmTitle" : "Harry Potter and the Prisoner of Azkaban",
+      "year" : 2004
+    }, {
+      "filmTitle" : "Children of Men",
+      "year" : 2006
+    }, {
+      "filmTitle" : "Gravity",
+      "year" : 2013
+    }, {
+      "filmTitle" : "Roma",
+      "year" : 2018
+    } ],
+    "firstName" : "Alfonso",
+    "id" : 2,
+    "imagePath" : "https://upload.wikimedia.org/wikipedia/commons/0/00/Alfonso_Cuar%C3%B3n_%282013%29_cropped.jpg",
+    "lastName" : "Cuarón",
+    "occupation" : "Director, screenwriter, producer, editor"
+  }, {
+    "countryOfLiving" : "Italy",
+    "dateOfBirth" : "1920/01/20",
+    "dateOfDeath" : "1993/10/31",
+    "films" : [ {
+      "filmTitle" : "La Strada",
+      "year" : 1954
+    }, {
+      "filmTitle" : "Nights of Cabiria",
+      "year" : 1957
+    }, {
+      "filmTitle" : "La Dolce Vita",
+      "year" : 1960
+    }, {
+      "filmTitle" : "8½",
+      "year" : 1963
+    }, {
+      "filmTitle" : "Amarcord",
+      "year" : 1973
+    } ],
+    "firstName" : "Federico",
+    "id" : 3,
+    "imagePath" : "https://m.media-amazon.com/images/M/MV5BMjE0NDI1MDU5Nl5BMl5BanBnXkFtZTgwNjQ2ODMwMzE@._V1_UY317_CR8,0,214,317_AL_.jpg",
+    "lastName" : "Fellini",
+    "occupation" : "Filmmaker"
+  }, {
+    "countryOfLiving" : "USA",
+    "dateOfBirth" : "1946/12/18",
+    "dateOfDeath" : "",
+    "films" : [ {
+      "filmTitle" : "The Terminal",
+      "year" : 2004
+    }, {
+      "filmTitle" : "War of the Worlds",
+      "year" : 2005
+    }, {
+      "filmTitle" : "Munich",
+      "year" : 2005
+    }, {
+      "filmTitle" : "Indiana Jones and the Kingdom of the Crystal Skull",
+      "year" : 2008
+    }, {
+      "filmTitle" : "The Adventures of Tintin",
+      "year" : 2011
+    }, {
+      "filmTitle" : "War Horse",
+      "year" : 2011
+    }, {
+      "filmTitle" : "Lincoln",
+      "year" : 2012
+    }, {
+      "filmTitle" : "Bridge of Spies",
+      "year" : 2015
+    }, {
+      "filmTitle" : "The BFG",
+      "year" : 2016
+    }, {
+      "filmTitle" : "The Post",
+      "year" : 2017
+    }, {
+      "filmTitle" : "Ready Player One",
+      "year" : 2018
+    } ],
+    "firstName" : "Steven Allan",
+    "id" : 4,
+    "imagePath" : "https://upload.wikimedia.org/wikipedia/commons/5/5d/Steven_Spielberg_Cannes_2013_3.jpg",
+    "lastName" : "Spielberg",
+    "occupation" : "Film producer, film director, screenwriter"
+  }, {
+    "countryOfLiving" : "USA",
+    "dateOfBirth" : "1958-08-25",
+    "dateOfDeath" : "",
+    "films" : [ {
+      "filmTitle" : "Pee-wee's Big Adventure",
+      "year" : 1985
+    }, {
+      "filmTitle" : "Batman",
+      "year" : 1989
+    }, {
+      "filmTitle" : "Batman Returns",
+      "year" : 1992
+    }, {
+      "filmTitle" : "Mars Attacks!",
+      "year" : 1996
+    }, {
+      "filmTitle" : "Planet of the Apes",
+      "year" : 2001
+    }, {
+      "filmTitle" : "Charlie and the Chocolate Factory",
+      "year" : 2005
+    }, {
+      "filmTitle" : "Alice in Wonderland",
+      "year" : 2010
+    }, {
+      "filmTitle" : "Miss Peregrine's Home for Peculiar Children",
+      "year" : 2016
+    } ],
+    "firstName" : "Tim",
+    "id" : 5,
+    "imagePath" : "https://m.media-amazon.com/images/M/MV5BMTcwNTc4NTMzOF5BMl5BanBnXkFtZTYwMzc5ODYz._V1_UX214_CR0,0,214,317_AL_.jpg",
+    "lastName" : "Burton",
+    "occupation" : "Film director, film producer, writer, artist"
+  }, {
+    "countryOfLiving" : "USA",
+    "dateOfBirth" : "1944-05-14",
+    "dateOfDeath" : "",
+    "films" : [ {
+      "filmTitle" : "American Graffiti",
+      "year" : 1973
+    }, {
+      "filmTitle" : "Star Wars",
+      "year" : 1977
+    }, {
+      "filmTitle" : "Star Wars: Episode I – The Phantom Menace",
+      "year" : 1999
+    }, {
+      "filmTitle" : "Star Wars: Episode II – Attack of the Clones",
+      "year" : 2002
+    }, {
+      "filmTitle" : "\tStar Wars: Episode III – Revenge of the Sith",
+      "year" : 2005
+    } ],
+    "firstName" : "George       ",
+    "id" : 6,
+    "imagePath" : "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/George_Lucas_cropped_2009.jpg/440px-George_Lucas_cropped_2009.jpg",
+    "lastName" : "Lucas",
+    "occupation" : "Filmmaker, director, producer, writer, entrepreneur"
+  }, {
+    "countryOfLiving" : "Russia, Italy",
+    "dateOfBirth" : "1932-04-04",
+    "dateOfDeath" : "1986-12-29",
+    "films" : [ {
+      "filmTitle" : "Ivan's Childhood",
+      "year" : 1962
+    }, {
+      "filmTitle" : "Andrei Rublev ",
+      "year" : 1966
+    }, {
+      "filmTitle" : "Solaris ",
+      "year" : 1972
+    }, {
+      "filmTitle" : "Mirror",
+      "year" : 1975
+    }, {
+      "filmTitle" : "Stalker",
+      "year" : 1979
+    }, {
+      "filmTitle" : "Nostalghia ",
+      "year" : 1983
+    }, {
+      "filmTitle" : "The Sacrifice",
+      "year" : 1986
+    } ],
+    "firstName" : "Andrei ",
+    "id" : 7,
+    "imagePath" : "https://upload.wikimedia.org/wikipedia/ru/thumb/b/b5/Andrei_Tarkovsky.jpg/500px-Andrei_Tarkovsky.jpg",
+    "lastName" : "Tarkovsky",
+    "occupation" : "Film director, screenwriter"
+  }, {
+    "countryOfLiving" : "USA",
+    "dateOfBirth" : "1946-01-20",
+    "dateOfDeath" : "",
+    "films" : [ {
+      "filmTitle" : "The Elephant Man",
+      "year" : 1980
+    }, {
+      "filmTitle" : "Dune",
+      "year" : 1984
+    }, {
+      "filmTitle" : "\tBlue Velvet",
+      "year" : 1986
+    }, {
+      "filmTitle" : "Twin Peaks: Fire Walk with Me\t",
+      "year" : 1992
+    }, {
+      "filmTitle" : "Mulholland Drive",
+      "year" : 2001
+    } ],
+    "firstName" : "David ",
+    "id" : 8,
+    "imagePath" : "https://m.media-amazon.com/images/M/MV5BMTQ1MTY2MTY2Nl5BMl5BanBnXkFtZTcwMDg1ODYwNA@@._V1_UY317_CR20,0,214,317_AL_.jpg",
+    "lastName" : "Lynch",
+    "occupation" : "Director, screenwriter, producer, painter, musician, sound designer, photographer, actor"
+  }, {
+    "countryOfLiving" : "England, USA",
+    "dateOfBirth" : "1899-08-13",
+    "dateOfDeath" : "1980-04-29",
+    "films" : [ {
+      "filmTitle" : "Number 13",
+      "year" : 1922
+    }, {
+      "filmTitle" : "The Mountain Eagle",
+      "year" : 1927
+    }, {
+      "filmTitle" : "Murder!",
+      "year" : 1930
+    }, {
+      "filmTitle" : "Young and Innocent",
+      "year" : 1937
+    }, {
+      "filmTitle" : "Saboteur",
+      "year" : 1942
+    }, {
+      "filmTitle" : "Stage Fright",
+      "year" : 1950
+    }, {
+      "filmTitle" : "The Wrong Man",
+      "year" : 1956
+    }, {
+      "filmTitle" : "Family Plot",
+      "year" : 1976
+    } ],
+    "firstName" : "Alfred ",
+    "id" : 9,
+    "imagePath" : "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Alfred_Hitchcock_%281955%29.JPG/440px-Alfred_Hitchcock_%281955%29.JPG",
+    "lastName" : "Hitchcock",
+    "occupation" : "Film director, film producer, actor, screenwriter, film editor, art director"
+  }, {
+    "countryOfLiving" : "USA",
+    "dateOfBirth" : "1928-07-26",
+    "dateOfDeath" : "1999-03-07",
+    "films" : [ {
+      "filmTitle" : "Day of the Fight",
+      "year" : 1951
+    }, {
+      "filmTitle" : "Killer's Kiss",
+      "year" : 1955
+    }, {
+      "filmTitle" : "Lolita",
+      "year" : 1962
+    }, {
+      "filmTitle" : "2001: A Space Odyssey",
+      "year" : 1968
+    }, {
+      "filmTitle" : "The Shining",
+      "year" : 1980
+    }, {
+      "filmTitle" : "\tEyes Wide Shut",
+      "year" : 1999
+    } ],
+    "firstName" : "Stanley ",
+    "id" : 10,
+    "imagePath" : "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/KubrickForLook_%28cropped%29.jpg/440px-KubrickForLook_%28cropped%29.jpg",
+    "lastName" : "Kubrick",
+    "occupation" : "Film director, screenwriter, producer"
+  } ]

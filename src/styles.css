@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    font-family: Tahoma, Geneva, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+a {
+    color: #17a2b8;
+}
+a:hover {
+    color: #01667f;
+}
+.btn {
+    width: 100%;
+}
+.nav-tabs {
+    cursor: pointer;
+}
+@media (max-width: 767px) {
+    .detail-img {
+        max-width: 200px;
+    }
+}

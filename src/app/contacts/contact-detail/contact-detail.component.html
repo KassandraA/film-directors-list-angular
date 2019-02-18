@@ -1,0 +1,39 @@
+  <div class="row">
+    <div class="col-md-12">
+      <ul class="nav nav-tabs">
+        <li class="nav-item mr-2">
+          <a
+          class="nav-link"
+          (click)="toggleTab('info')"
+          [ngClass]="{'active': tab === 'info'}">Info</a>
+        </li>
+        <li class="nav-item">
+          <a
+          class="nav-link"
+          (click)="toggleTab('films')"
+          [ngClass]="{'active': tab === 'films'}">Films</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <app-contact-info *ngIf="showInfoTab"></app-contact-info>
+  <app-contact-films *ngIf="showFilmsTab"></app-contact-films>
+  
+  <div class="row justify-content-md-center mt-3 mb-4">
+    <div class="col-6 col-sm-6 col-md-6 col-lg-3 align-content-center">
+      <button
+      class="btn btn-info"
+      (click)="onEditContact()"
+      [disabled]="!auth.canActivate()">Edit</button>
+    </div>
+    <div class="col-6 col-sm-6 col-md-6 col-lg-3 align-content-center">
+      <button
+      class="btn btn-danger"
+      (click)="onDeleteContact()"
+      [disabled]="!auth.canActivate()">Delete</button>
+    </div>
+    <div class="col-sm-12 col-md-12 col-lg-9 offset-lg-3">
+      <p *ngIf="!auth.canActivate()">Please, authorize first!</p>
+    </div>
+  </div>
