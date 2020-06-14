@@ -4,16 +4,19 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
-
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'contacts', loadChildren: './contacts/contacts.module#ContactsModule' },
-  { path: '**', component: PageNotFoundComponent }
-
+  // { path: 'contacts', loadChildren: './contacts/con'},
+  {
+    path: 'contacts',
+    loadChildren: () =>
+      import('./contacts/contacts.module').then((m) => m.ContactsModule),
+  },
+  { path: '**', component: PageNotFoundComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
